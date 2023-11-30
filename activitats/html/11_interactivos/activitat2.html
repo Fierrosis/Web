@@ -7,6 +7,7 @@
     </style>
 </head>
 <body>
+    <a href="../../activitats.html">Vuelve al inicio</a>
     <h1>Buscador de Smartphones</h1>
     <form id="searchForm">
         <label for="brand">Marca:</label>
@@ -21,15 +22,5 @@
         </select>
         <button type="button" onclick="search()">Buscar</button>
     </form>
-    <script>
-        const brands = ["Apple", "Samsung", "Huawei", "Xiaomi", "Google", "OnePlus", "LG"];
-        const brandInput = document.getElementById("brand");
-        new Awesomplete(brandInput, { list: brands });
-        function search() {
-            const selectedBrand = brandInput.value;
-            const selectedPriceRange = document.getElementById("priceRange").value;
-            console.log("Marca seleccionada:", selectedBrand);
-            console.log("Rango de precios seleccionado:", selectedPriceRange);}
-    </script>
     </body>
 </html>
