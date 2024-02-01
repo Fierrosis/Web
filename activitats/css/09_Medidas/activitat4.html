@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .subrallado strong {
+            background-color: yellow;
+        }
+        .subrallado strong::after{
+            background-color: rgba(255, 255, 0, 0,5);
+        }
+    </style>
 </head>
 <body>
-    
+    <p class="subrallado">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit. Voluptatibus at voluptatem rerum. <strong>Corrupti</strong> eius magni hic ex aperiam deserunt veniam <strong>aspernatur blanditiis mollitia</strong> soluta, architecto dolorum temporibus minus tenetur et.</p>
 </body>
 </html>
